@@ -100,7 +100,14 @@ public class RestaurantArrayImpl implements IRestaurant {
 
 	@Override
 	public int getNumberOfTablesWithChildren() {
-		return 0;
+		int i;
+		int total = 0;
+		for (i = 0; i <= nTables; i++) {
+			if (tables[i].getNChildren() >= 1) {
+				total++;
+			}
+		}
+		return total;
 	}
 
 
@@ -123,7 +130,7 @@ public class RestaurantArrayImpl implements IRestaurant {
 
 	@Override
 	public void addDishToTable(int nTable, String name, double price, int count) {
-	
+		//Dish  = new Dish(name, price);
 	}
 
 

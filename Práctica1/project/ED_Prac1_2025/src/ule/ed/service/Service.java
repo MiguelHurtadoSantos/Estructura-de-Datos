@@ -40,10 +40,9 @@ public class Service {
 	 // total de un plato = count * price (número de platos * cantidad de platos)
 	 
 	 public double getTotalService() {
-		 // TODO
-		return 0;
-		
-			
+		double total = 0;
+		getOrder();
+		return total;
 	 }
 	 
 	 @Override
